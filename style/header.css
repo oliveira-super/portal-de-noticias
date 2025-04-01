@@ -1,0 +1,35 @@
+@import url(index.css);
+
+#nav-primary, #nav-sections{
+    display: flex;
+}
+
+#nav-primary{
+    justify-content: space-between;
+    margin: 20px 32px;
+}
+#nav-primary 
+div:nth-child(1),
+div:nth-child(3){
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+#nav-sections ul{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    border: 1px solid var(--color-str);
+    padding: 14px 0;
+}
+#nav-sections a{
+    color: unset;
+    text-decoration: none;
+    transition: .4s;
+}
+#nav-sections a:hover{
+    color: var(--color-brand-light);
+}
