@@ -1,0 +1,12 @@
+/* EXTERNAL: */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* VAR: */
+:root{
+    --font-default: 'Archivo', 'sans-serif';
+    --text-h1: 800 24px/135% var(var(--font-default));
+    --text-h2: 800 16px/140% var(var(--font-default));
+    --text-h3: 800 14px/140% var(var(--font-default));
+    --text-span: 600 14px/145% var(var(--font-default));
+    --text-default: 400 14px/160% var(var(--font-default));
+}
