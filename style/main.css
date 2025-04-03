@@ -1,0 +1,22 @@
+@import url(global.css);
+
+main{
+    padding: 16px;
+}
+
+#emphasis{
+    display: grid;
+    grid-template-areas: 
+    "IMG1 IMG1 IMG2 IMG3"
+    "IMG1 IMG1 IMG4 IMG5";
+    gap: 16px;
+    margin: 16px;
+    margin-bottom: 64px;
+}
+#emphasis img{
+    border-radius: 6px;
+}
+#emphasis img:nth-child(1){
+    grid-area: IMG1;
+}
+
