@@ -18,6 +18,7 @@ div:nth-child(3){
 }
 
 #nav-sections ul{
+    color: var(--color-second);
     list-style: none;
     display: flex;
     width: 100%;
