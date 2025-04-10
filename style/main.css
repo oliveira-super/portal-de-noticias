@@ -2,11 +2,11 @@
 
 
 main{
-    padding: 16px;
     max-width: 1200px;
     margin: auto;
 }
-/* POSICIONAMENTO DE IMGS COM GRID + MASCARA GRADIENTE */
+/*DESTAQUES*/
+/* grid */
 #emphasis{
     display: grid;
     grid-template-areas: 
@@ -15,15 +15,18 @@ main{
     gap: 16px;
     margin-bottom: 64px;
 }
+.noticia1 img{
+    height: 416px;
+}
 #emphasis div:nth-child(1){
     grid-area: IMG1;
     overflow: hidden;
     position: relative;
     border-radius: 6px;
 }
-/* MASCARA GERAL DE CADA FIGURA */
+/* mask geral das figuras */
 .mask{
-    background-image: linear-gradient(to bottom, #ff000000 40%, #0206178c 80%);
+    background-image: linear-gradient(to bottom, #ff000000 60%, #020617c5 80%);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -43,7 +46,7 @@ main{
     display: flex;
     align-items: end;
 }
-/* ESTILO GERAL DAS FIGURAS 2-5 */
+/* estilo geral das figuras 2-5 */
 #emphasis > div:nth-child(2),
 #emphasis > div:nth-child(3),
 #emphasis > div:nth-child(4),
@@ -53,67 +56,44 @@ main{
     border-radius: 6px;
 }
 .mask div{
-    padding: 20px;
+   padding: 20px; 
 }
 .mask p{
     margin-top: 8px;
     font-weight: bold;
     padding-right: 2em;
+    padding-left: 10px;
     font-size: 1.4em;
     line-height: 1.4em;
-}
-.mask h3{
-    font-size: .6em;
-    font-weight: 100;
-    background-color: var(--color-brand-dark);
-    margin: 10px 0;
-    display: inline;
-    padding: 4px 8px;
-    border-radius: 4px;
-    text-transform: uppercase;
-}
-.mask2 div,
-.mask3 div,
-.mask4 div,
-.mask5 div{
-    padding: 10px;
 }
 .mask2 p,
 .mask3 p,
 .mask4 p,
 .mask5 p{
-    margin-top: 8px;
+    margin-top: 4px;
     font-weight: bold;
-    padding-right: .1em;
     font-size: .85em;
     line-height: 1.4em;
+    padding: 10px;
+    padding-right: 20px;
 }
-.mask2 h3,
-.mask3 h3,
-.mask4 h3,
-.mask5 h3{
-    font-size: .6em;
-    font-weight: 100;
-    background-color: var(--color-brand-dark);
-    margin: 10px 0;
-    display: inline;
-    padding: 4px 8px;
-    border-radius: 4px;
-    text-transform: uppercase;
-}
-
-/* MAIS VISTOS DA SEMANA */
+/* MAIS LIDAS DA SEMANA */
 #most-read{
     display: flex;
     flex-direction: column;
     gap: 24px;
+}
+.title{
+   font-size: .9em;
+   font-weight: normal;
+   color: var(--color-second);
 }
 #div-most-read{
     display: flex;
     color: var(--color-second);
     justify-content: space-between;
 }
-#div-most-read a{
+a{
     color: var(--color-second);
     text-decoration: none;
 }
@@ -138,7 +118,7 @@ main{
 #div-most-read div:hover .arrow_hover,
 #div-most-read div:hover a{
     display: block;
-    color: var(--color-brand-light)
+    color: var(--color-brand-light);
 }
 #figure-most-read{
     display: flex;
@@ -153,18 +133,59 @@ figure img{
 }
 figure span{
     position: absolute;
-    font-size: .8em;
-    font-weight: 100;
-    background-color: var(--color-brand-dark);
-    margin: 8px;
-    display: inline;
-    padding: 4px 8px;
-    border-radius: 4px;
-    text-transform: uppercase;
 }
 figure p{
     font-weight: bolder;
     font-size: 16px;
-    /* padding-right: .55em; */
     margin-top: 8px;
+}
+
+/* DESTAQUE DE IA - lado esquerdo */
+.emphasis-ia{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+#title-patern{
+    display: flex;
+    justify-content: space-between;
+}
+#article-1{
+    display: flex;
+}
+#article-1 img{
+    height: 176px;
+}
+#article-1 h3{  
+    margin: 0;
+}
+#article-1 p{
+    margin: 8px 0;
+    line-height: 1.4em;
+}
+#article-1 div p:nth-child(2){
+    font-weight: bold;
+}
+#article-1 div p:nth-child(3){
+    font-weight: lighter;
+}
+#figures-left{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+/* DESTAQUE DE IA - lado direito */
+#side-right figure img{
+    width: 72px;
+    height: 72px;
+}
+#side-right #title-patern{
+    margin-bottom: 24px;
+}
+#side-right figure{
+    display: flex;
+    gap: 15px;
+}
+#side-right h3{
+    margin: 0;
 }
