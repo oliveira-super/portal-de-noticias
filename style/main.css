@@ -138,13 +138,16 @@ figure p{
     font-weight: bolder;
     font-size: 16px;
     margin-top: 8px;
+    line-height: 20px;
 }
-
-/* DESTAQUE DE IA - lado esquerdo */
-.emphasis-ia{
+/*DESTAQUE IA GRID unindo lados*/
+.emphasis_ia{
+    margin-top: 80px;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 58% auto;
+    gap: 32px;
 }
+/* DESTAQUE DE IA - lado esquerdo */
 #title-patern{
     display: flex;
     justify-content: space-between;
@@ -158,9 +161,14 @@ figure p{
 #article-1 h3{  
     margin: 0;
 }
-#article-1 p{
+#article-1 h4{
     margin: 8px 0;
     line-height: 1.4em;
+}
+#article-1 p{
+    font-size: .9em;
+    line-height: 1.5em;
+    padding-right: 1.2em;
 }
 #article-1 div p:nth-child(2){
     font-weight: bold;
@@ -172,12 +180,19 @@ figure p{
     margin-top: 24px;
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 33px;
 }
 /* DESTAQUE DE IA - lado direito */
+#side-right{
+    height: 100;
+}
 #side-right figure img{
     width: 72px;
     height: 72px;
+}
+#side-right figure p{
+    font-size: .9em;
+    padding-right: 12px;
 }
 #side-right #title-patern{
     margin-bottom: 24px;
@@ -185,7 +200,25 @@ figure p{
 #side-right figure{
     display: flex;
     gap: 15px;
+    margin-bottom: 32px;
 }
 #side-right h3{
     margin: 0;
+}
+#ads-img{
+    height: 280px;
+    margin-bottom: 32px;
+    border-radius: 4px;
+}
+#ads-div{
+    position: relative;
+}
+#ads-btn{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
 }
